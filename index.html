@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gRPC Blog</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        header, footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .blog {
+            background: white;
+            padding: 25px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .blog {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            .blog h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Technology Blog</h1>
+        <p>Learn About Modern Technologies</p>
+    </header>
+    <nav class="navbar navbar-dark bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+        </div>
+    </nav>
+    <main class="container">
+        <article class="blog">
+            <h2>Introduction to gRPC</h2>
+            <p class="text-muted">Published on October 20, 2026</p>
+            <p>
+                gRPC is a high-performance remote procedure call (RPC)
+                framework developed by Google. It allows applications
+                running on different machines to communicate with each
+                other efficiently.
+            </p>
+            <h4>How gRPC Works</h4>
+            <p>
+                gRPC uses Protocol Buffers (Protobuf) to define services
+                and serialize data. Developers define methods in a
+                .proto file, and gRPC generates client and server code
+                for supported programming languages.
+            </p>
+            <h4>Advantages of gRPC</h4>
+            <p>
+                gRPC uses HTTP/2 for communication, supporting features
+                such as multiplexing and streaming. It also supports
+                multiple languages, making it suitable for distributed
+                systems and microservices.
+            </p>
+            <h4>Conclusion</h4>
+            <p>
+                gRPC is a useful technology for building fast and
+                reliable communication between services. Its efficient
+                data transfer and language support make it a popular
+                choice for modern application development.
+            </p>
+            <button class="btn btn-primary">Read More</button>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2026 Technology Blog</p>
+    </footer>
+</body>
+</html>
